@@ -1,0 +1,188 @@
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+.type:focus{
+border: none;
+outline: none;
+}
+
+
+.all {cursor: pointer;}
+
+
+.todo{
+   
+    background-color:grey ;
+    display:flex ;
+    padding:20px ;
+    color: white;
+    text-decoration: none;
+align-items: center;
+justify-content: space-between;
+
+}
+
+
+.todo > img{
+    border-radius: 50%;
+
+}
+
+
+.todo:nth-child(even){
+    background-color: lightslategrey;
+}
+
+
+
+.remove {
+display: flex; 
+justify-content: space-between;
+
+background-color: white;
+
+
+
+}
+
+
+#page{
+position: relative;
+
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+#btn{
+
+cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                        Mobile S                             */
+@media screen and (max-width: 320px) and (min-width: 0px){
+    
+
+}
+
+
+
+/*                        Mobile M                              */
+@media screen and (max-width: 375px) and (min-width: 321px){
+
+
+
+}
+
+
+/*                        Mobile L                              */
+@media screen and (max-width: 425px) and (min-width: 376px){
+
+    
+
+}
+
+
+
+
+/*                        TAblet                             */
+@media screen and (max-width: 768px) and (min-width: 426px){
+
+
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+    
+
+    
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px){
+    
+}
+
+
+
+@media screen and (max-width: 950px) and (min-width: 801px){
+  
+
+}
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){
+
+
+
+}
+
+
+
+@media screen and (max-width: 1600px) and (min-width: 1441px){
+
+    
+
+}
+
+
+
+@media screen and (max-width: 1700px) and (min-width: 1601px){
+    
+
+}
+
+
+
+@media screen and (max-width: 1900px) and (min-width: 1701px){
+    
+
+
+
+
+}
+@media screen and (max-width: 2000px) and (min-width: 1901px){
+    
+   
+
+
+}
+
+
+
+
