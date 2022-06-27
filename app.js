@@ -16,7 +16,7 @@ const todo = document.createElement("div")
 todo.classList.add("todo")
 todo.innerHTML= `
 <div>${value}</div>
-<div><input class="check" type="checkbox"></div>
+<div class="check" ><input  type="checkbox"></div>
 <div id="btn" >
         <i class="fa-solid fa-xmark"></i>
         </div>`
@@ -48,7 +48,7 @@ function js (){
     todo.innerHTML= `
     <div>${ele?.title}</div>
     
-    <div ><input class="check" type="checkbox"></div>
+    <div class="check" ><input  type="checkbox"></div>
     <div class="btns">
             <i class="fa-solid fa-xmark"></i>
             </div>`
