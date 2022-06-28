@@ -48,7 +48,7 @@ function js (){
     todo.innerHTML= `
     <div>${ele?.title}</div>
     
-    <div class="check" ><input  type="checkbox"></div>
+    <div class="check" ><input type="checkbox" ${ele.iscomp ? "checked":""}></div>
     <div class="btns">
             <i class="fa-solid fa-xmark"></i>
             </div>`
@@ -62,6 +62,18 @@ function js (){
             todo.remove()
         }
         
+        todo.children[1].onchange = (chk) =>{
+            
+            
+            const data_arr = JSON.parse(localStorage.getItem("title"))
+            data_arr[i].iscomp = chk.target.checked     
+        
+            localStorage.setItem("title",JSON.stringify(data_arr))
+
+        }
+            
+            
+            
     }, 500);
 
 
@@ -71,10 +83,8 @@ function js (){
 
 
 
-function savecheck(){
-let checkbox =document.getElementsByClassName("check")
-localStorage.setItem("checkbox",checkbox.checked)
 
-}
 let checked = JSON.parse(localStorage.getItem("checkbox"))
-document.getElementsByClassName("check").checked = checked
+document.querySelectorAll("check").checked = checked
+
+
